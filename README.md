@@ -1,6 +1,17 @@
 # my-code-cheat-sheet
 cheat sheet
 
+**pandas**
+
+data = pd.read_csv('file location')   _code to read a file_
+data.head() _**code to read the first 5rows of the file_**
+data.loc[:,[name of columns]]
+data.sample(5) **this gives random 5 rows out of the file**
+data.describe() **gives info on the data**
+data.dropna() **deducts the null value rows in the column**
+data.info() **give the number and type of characters in the data**
+
+
 **numpy**
 
 np.arange
@@ -22,4 +33,11 @@ plt.figure(figsize= [8,12]) #**this is to adjust the size of the figure as a who
 plt.scatter(x, y , alpha = 0.2, marker ='x', s= 50) #**this is to create scatter plot with transparency of 0.2, the marker is the shape of plot points and s is the size of the markers**
 plt.subplot(2,2,1) #**used to create multiple plots in a figure**
 plt.semilogy(y,y**2) #to create a plot with log scale on the y axis
-plt.se
+plt.text(4,0,'Some Text',fontsize = 20,backgroundcolor = 'red',color = 'blue') # this code is to create a text in the middle of a plot at x=4 and y=0
+plt.pie([greater,lessthan],labels=['Greater','Less Than']);  ** this code is to create pie charts with labels on each sections as given names**
+
+
+**Data retrievals**
+
+make sure all data retrieval codes have a list bracket to it for it to work. i.e []
+
